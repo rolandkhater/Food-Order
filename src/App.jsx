@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
 import Header from "./Components/Header";
 import Meals from "./Components/Meals";
 import { CartContextProvider } from "./store/CartContext";
 import { UserProgressContextProvider } from "./store/UserProgressContext";
 import Cart from "./Components/Cart";
+import Checkout from "./Components/Checkout.jsx";
 
 function App() {
 
@@ -14,6 +14,7 @@ function App() {
         <Header />
         <Meals />
         <Cart />
+        <Checkout />
 
       </CartContextProvider>
     </UserProgressContextProvider>
